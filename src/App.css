@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  margin: 0 .3em;
+  padding: 0.7em 1em;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #cfcfcf;
+  color: #333;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+
+button.danger {
+  border-color: #850000;
+  background-color: #cc0000;
+  color: #fff;
+}
+
+button.success {
+  border-color: #004d0b;
+  background-color: #007500;
+  color: #fff;
+}
