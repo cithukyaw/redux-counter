@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Redux Simple App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple counter app using React & Redux. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
