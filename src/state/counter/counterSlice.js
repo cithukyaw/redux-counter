@@ -1,11 +1,12 @@
 import {createSlice} from "@reduxjs/toolkit";
+import {saveHistoryAsync} from "../history/historySlice";
 
 const initialState = {
     value: 0
 }
 
 const counterSlice = createSlice({
-    name: "counter",
+    name: 'counter',
     initialState,
     reducers: {
         increment: (state) => {
@@ -28,6 +29,12 @@ const counterSlice = createSlice({
         reset: (state) => {
             state.value = 0;
         },
+    },
+    extraReducers: (builder) => {
+        builder.addCase(saveHistoryAsync.fulfilled, (state, action) => {
+            // reset when submit is called
+            state.value = 0;
+        });
     }
 });
 
